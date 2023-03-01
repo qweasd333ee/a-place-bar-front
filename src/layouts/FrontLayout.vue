@@ -12,9 +12,9 @@
           </q-btn>
         </div>
         <q-toolbar-title class="col-md-2">
-          <a href="/">
+          <router-link to="/">
             <img src="~/assets/LogoPic/logo6.png" />
-          </a>
+          </router-link>
         </q-toolbar-title>
         <div class="toolbar-right-link col-md-4 text-center" v-if="$q.screen.gt.sm">
           <q-btn flat to="/seat">
