@@ -59,9 +59,9 @@
 </template>
 
 <script setup>
-import { apiAuth } from 'src/boot/axios'
 import { reactive } from 'vue'
 import { isEmail } from 'validator'
+import { apiAuth } from 'src/boot/axios'
 import Swal from 'sweetalert2'
 
 const rules = {

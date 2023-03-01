@@ -60,8 +60,6 @@
                   <q-btn :label="!seat.using ? '加入訂位' : '使用中'" type="submit" color="warning" :disabled="seat.using"/>
                 </q-form>
               </q-card-section>
-              <q-card-section class="col-12">
-              </q-card-section>
             </q-card>
           </div>
         </div>
@@ -72,10 +70,10 @@
 
 <script setup>
 import { reactive, ref } from 'vue'
+import { isEmail } from 'validator'
 import { useRoute, useRouter } from 'vue-router'
 import { api } from 'src/boot/axios'
 import { Swal } from 'sweetalert2'
-import { isEmail } from 'validator'
 import { useUserStore } from 'src/stores/user'
 
 const route = useRoute()
