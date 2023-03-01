@@ -100,7 +100,7 @@ const submit = async () => {
     Swal.fire({
       icon: 'success',
       title: '成功',
-      text: '已收到您的意見，將於工作日由專人以郵件回覆您'
+      text: '感謝您寶貴的意見，將會由專人以郵件回覆您，請耐心等候！'
     })
     form.dialog = false
   } catch (error) {

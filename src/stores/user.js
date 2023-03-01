@@ -128,12 +128,12 @@ export const useUserStore = defineStore('user', () => {
       // })
       if (quantity >= 1) {
         Notify.create({
-          message: '已增加',
+          message: '已新增餐點',
           color: 'green'
         })
       } else if (quantity < 0) {
         Notify.create({
-          message: '已減少',
+          message: '已減少餐點',
           color: 'red'
         })
       }
