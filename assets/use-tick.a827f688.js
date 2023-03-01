@@ -1,0 +1,1 @@
+import{V as i,q as s,X as r,ak as a,v as c}from"./index.cbb32ab0.js";function v(){let e;const o=c();function t(){e=void 0}return i(t),s(t),{removeTick:t,registerTick(n){e=n,r(()=>{e===n&&(a(o)===!1&&e(),e=void 0)})}}}export{v as u};
