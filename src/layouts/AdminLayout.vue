@@ -50,6 +50,12 @@
             </q-item-section>
             <q-item-section>會員管理</q-item-section>
           </q-item>
+          <q-item clickable v-ripple to="/admin/contacts">
+            <q-item-section avatar>
+              <q-icon name="mdi-face-agent" />
+            </q-item-section>
+            <q-item-section>回報管理</q-item-section>
+          </q-item>
           <q-item clickable v-ripple to="/admin/statistics">
             <q-item-section avatar>
               <q-icon name="bar_chart" />

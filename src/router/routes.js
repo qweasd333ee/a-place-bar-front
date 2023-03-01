@@ -158,6 +158,16 @@ const routes = [
           login: true,
           admin: true
         }
+      },
+      {
+        path: 'contacts',
+        name: 'contacts',
+        component: () => import('pages/admin/contactsView.vue'),
+        meta: {
+          title: '一個地方 | 回報管理',
+          login: true,
+          admin: true
+        }
       }
     ]
   },

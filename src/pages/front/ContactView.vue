@@ -35,22 +35,20 @@
           </div>
           <div class="col-md-9 q-px-lg">
             <q-form
-              @submit="onSubmit"
-              @reset="onReset"
+              @submit="submit"
               class="q-gutter-md"
             >
               <div class="q-mb-lg">
-                <q-input v-model="text" filled type="text" label="姓名" />
+                <q-input v-model="form.name" filled type="text" label="姓名" :rules="[rules.required]" />
               </div>
               <div class="q-mb-lg">
-                <q-input v-model="text" filled type="text" label="信箱" />
+                <q-input v-model="form.email" filled type="text" label="信箱" :rules="[rules.required, rules.email]" />
               </div>
               <div class="q-mb-lg">
-                <q-input v-model="text" filled rows="11" type="textarea" label="信息" />
+                <q-input v-model="form.description" filled rows="11" type="textarea" label="內容" :rules="[rules.required]" />
               </div>
               <div>
                 <q-btn label="送出" type="submit" color="warning"/>
-                <q-btn label="重設" type="reset" color="warning" flat class="q-ml-sm" />
               </div>
             </q-form>
           </div>
@@ -59,3 +57,51 @@
     </section>
   </q-page>
 </template>
+
+<script setup>
+import { apiAuth } from 'src/boot/axios'
+import { reactive } from 'vue'
+import { isEmail } from 'validator'
+import Swal from 'sweetalert2'
+const rules = {
+  required (v) {
+    return !!v || '欄位必填'
+  },
+  email (v) {
+    return isEmail(v) || '信箱格式錯誤'
+  }
+}
+const contacts = reactive([])
+const form = reactive({
+  _id: '',
+  name: '',
+  email: '',
+  description: '',
+  loading: false
+})
+const submit = async () => {
+  form.loading = true
+  const fd = new FormData()
+  fd.append('name', form.name)
+  fd.append('age', form.age)
+  fd.append('email', form.email)
+  fd.append('description', form.description)
+  try {
+    const { data } = await apiAuth.post('/contacts', fd)
+    contacts.push(data.result)
+    Swal.fire({
+      icon: 'success',
+      title: '成功',
+      text: '已收到您的意見，將於工作日由專人以郵件回覆您'
+    })
+    form.dialog = false
+  } catch (error) {
+    Swal.fire({
+      icon: 'error',
+      title: '失敗',
+      text: error?.response?.data?.message || '發生錯誤'
+    })
+  }
+  form.loading = false
+}
+</script>

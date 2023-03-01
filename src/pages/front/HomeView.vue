@@ -8,10 +8,16 @@
       <div class="container q-mt-xl">
         <div class="row justify-center">
           <div class="content col-12 text-center q-my-auto">
-            <q-img class="q-mb-xl" src="~/assets/LogoPic/logo7.png" width="250px" />
-            <p class="text q-mb-xl text-h6">
-              夜晚 &nbsp; 找個室內舒適的環境跟朋友一起來喝點小酒暢聊一整晚吧！<br>舒服的沙發 &nbsp; 優美的燈光 &nbsp; 好喝的酒 &nbsp; 再舒適不過的環境 &nbsp; 等著你來享受
-            </p>
+            <div data-aos="zoom-in-up" data-aos-anchor-placement="bottom-bottom"
+          data-aos-duration="1500">
+              <q-img class="q-mb-xl" src="~/assets/LogoPic/logo7.png" width="250px" />
+            </div>
+            <div data-aos="zoom-in-up" data-aos-anchor-placement="bottom-bottom"
+          data-aos-duration="1500">
+              <p class="text q-mb-xl text-h6">
+                夜晚 &nbsp; 找個室內舒適的環境跟朋友一起來喝點小酒暢聊一整晚吧！<br>舒服的沙發 &nbsp; 優美的燈光 &nbsp; 好喝的酒 &nbsp; 再舒適不過的環境 &nbsp; 等著你來享受
+              </p>
+            </div>
           </div>
         </div>
       </div>
@@ -40,12 +46,18 @@
     <section id="section02" class="row">
       <div class="col-12">
         <q-card square flat class="text-center">
-          <q-card-section class="text-h4">
-            酒逢知己飲，詩向會人吟
-          </q-card-section>
-          <q-card-section class="text-h6">
-            素未謀面的我們，此時此刻都在這段時間內一起享受綠島獨特的情調， <br> 在「一個地方」把酒言歡，感受著生活的美好，工作的充實，以及回歸自然的本質。
-          </q-card-section>
+          <div data-aos="zoom-in-up" data-aos-anchor-placement="bottom-bottom"
+          data-aos-duration="1500">
+            <q-card-section class="text-h4">
+              酒逢知己飲，詩向會人吟
+            </q-card-section>
+          </div>
+          <div data-aos="zoom-in-up" data-aos-anchor-placement="bottom-bottom"
+          data-aos-duration="1000">
+            <q-card-section class="text-h6">
+              素未謀面的我們，此時此刻都在這段時間內一起享受綠島獨特的情調， <br> 在「一個地方」把酒言歡，感受著生活的美好，工作的充實，以及回歸自然的本質。
+            </q-card-section>
+          </div>
         </q-card>
       </div>
     </section>
@@ -56,39 +68,63 @@
       <div class="col-12 col-sm-7">
         <q-card square flat class="column flex-center">
           <q-card-section>
-            <div class="text-h4">
-              訂位
+            <div data-aos="zoom-in-up" data-aos-anchor-placement="bottom-bottom"
+            data-aos-duration="1000">
+              <div class="text-h4">
+                訂位
+              </div>
             </div>
           </q-card-section>
-          <q-card-section class="text-h6">
-            我們沒有限制喝酒時間，建議提前訂位，確保有位子，當天位子保留10分鐘。
-          </q-card-section>
-          <q-card-section>
-            <q-btn outline label="立即訂位" to="/seat" />
-          </q-card-section>
+          <div data-aos="zoom-in-up" data-aos-anchor-placement="bottom-bottom"
+          data-aos-duration="1000">
+            <q-card-section class="text-h6">
+              我們沒有限制喝酒時間，建議提前訂位，確保有位子，當天位子保留10分鐘。
+            </q-card-section>
+          </div>
+          <div data-aos="zoom-in-up" data-aos-anchor-placement="bottom-bottom"
+          data-aos-duration="1000">
+            <q-card-section>
+              <q-btn outline label="立即訂位" to="/seat" />
+            </q-card-section>
+          </div>
         </q-card>
         <q-card square flat class="column flex-center">
-          <q-card-section>
-            <div class="text-h4">營業時間</div>
-          </q-card-section>
-          <q-card-section class="text-h6">
-            週一至週日，晚上19:30至01:00
-          </q-card-section>
-          <q-card-section>
-            <q-btn outline label="查看更多資訊" to="/about" />
-          </q-card-section>
+          <div data-aos="zoom-in" data-aos-anchor-placement="bottom-bottom"
+          data-aos-duration="1000">
+            <q-card-section>
+              <div class="text-h4">營業時間</div>
+            </q-card-section>
+          </div>
+          <div data-aos="zoom-in" data-aos-anchor-placement="bottom-bottom"
+          data-aos-duration="1000">
+            <q-card-section class="text-h6">
+              週一至週日，晚上19:30至01:00
+            </q-card-section>
+          </div>
+          <div data-aos="zoom-in" data-aos-anchor-placement="bottom-bottom"
+          data-aos-duration="1000">
+            <q-card-section>
+              <q-btn outline label="查看更多資訊" to="/about" />
+            </q-card-section>
+          </div>
         </q-card>
       </div>
     </section>
     <section id="section04" class="row">
       <div class="col-12 col-sm-7">
         <q-card class="column flex-center text-center" square flat style="height: 100%;">
-          <q-card-section class="text-h6">
-            一杯酒的用心 除了調製過程外 還有恰到好處的裝飾 <br> 讓喝酒時視覺味覺嗅覺堆疊出多重層次的饗宴 我們調的不是酒 是愛
-          </q-card-section>
-          <q-card-section>
-            <q-btn outline label="餐點介紹" to="/product" />
-          </q-card-section>
+          <div data-aos="zoom-in" data-aos-anchor-placement="bottom-bottom"
+          data-aos-duration="1000">
+            <q-card-section class="text-h6">
+              一杯酒的用心 除了調製過程外 還有恰到好處的裝飾 <br> 讓喝酒時視覺味覺嗅覺堆疊出多重層次的饗宴 我們調的不是酒 是愛
+            </q-card-section>
+          </div>
+          <div data-aos="zoom-in" data-aos-anchor-placement="bottom-bottom"
+          data-aos-duration="1000">
+            <q-card-section>
+              <q-btn outline label="餐點介紹" to="/product" />
+            </q-card-section>
+          </div>
         </q-card>
       </div>
       <div class="col-12 col-sm-5 pic">
@@ -98,12 +134,18 @@
     <section id="section05">
       <div class="container">
         <div class="row">
-          <div class="col-12 text-center q-mb-lg text-h4">關於</div>
-          <p class="col-12 text-center q-mb-xl text-h6 text">
-            一個人可以走得很快 但一群人可以走得很遠
-            <br>
-            願那些相聚與重逢，能留在你們心裡的一個地方
-          </p>
+          <div class="col-12" data-aos="zoom-in" data-aos-anchor-placement="bottom-bottom"
+          data-aos-duration="1000">
+            <div class="text-center q-mb-lg text-h4">關於</div>
+          </div>
+          <div class="col-12" data-aos="zoom-in" data-aos-anchor-placement="bottom-bottom"
+          data-aos-duration="1000">
+            <p class="text-center q-mb-xl text-h6 text">
+              一個人可以走得很快 但一群人可以走得很遠
+              <br>
+              願那些相聚與重逢，能留在你們心裡的一個地方
+            </p>
+          </div>
         </div>
         <div class="column">
           <img class="cell" src="~/assets/CarouselPic/pic24.jpeg">
@@ -124,4 +166,7 @@
 </template>
 
 <script setup>
+import AOS from 'aos'
+import 'aos/dist/aos.css'
+AOS.init()
 </script>

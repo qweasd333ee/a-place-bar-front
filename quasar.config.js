@@ -33,7 +33,8 @@ module.exports = configure(function (/* ctx */) {
       'axios',
       'img-input',
       'vue-easy-pie-chart',
-      ''
+      'gsap',
+      'aos'
     ],
 
     // https://v2.quasar.dev/quasar-cli-vite/quasar-config-js#css
