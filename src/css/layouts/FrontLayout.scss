@@ -1,0 +1,98 @@
+#front-layout {
+  #navbar {
+    position: fixed;
+    height: 70px;
+    transition: background-color 0.3s ease-in-out;
+    color: white;
+    .q-toolbar {
+      height: 70px;
+      img {
+        max-width: 150px;
+      }
+      .toolbar-left-link {
+        .q-btn {
+          font-size: 1.2rem;
+          &:hover {
+            color: #E27638;
+          }
+        }
+      }
+      .toolbar-right-link {
+        .q-btn {
+          font-size: 1.2rem;
+          &:hover {
+            color: #E27638;
+          }
+        }
+      }
+      .q-toolbar__title {
+        text-align: left;
+      }
+    }
+  }
+  .q-page-container {
+    padding-top: 0 !important;
+  }
+  footer {
+    height: 200px;
+    padding: 1.5% 2%;
+    .footer {
+      .footerCol {
+        padding-left: 5%;
+        .footerLogo {
+          width: 70px;
+          padding-bottom: 10%;
+        }
+        .footerIcons {
+          font-size: 1.2rem;
+          a {
+            color: white;
+            text-decoration: none;
+            &:hover {
+              color: #E27638;
+            }
+          }
+          .q-icon {
+            padding-right: 2%;
+          }
+        }
+      }
+      .contact {
+        line-height: 2rem;
+        font-size: 1rem;
+        .q-icon {
+          font-size: 1.2rem;
+          padding-right: 2%;
+        }
+      }
+      .copyRight {
+        line-height: 2rem;
+        font-size: 1rem;
+      }
+    }
+  }
+}
+.white {
+  background-color: black;
+  .q-btn {
+    color: white;
+  }
+}
+.transparent {
+  background-color: transparent;
+  .q-btn {
+    color: white;
+  }
+}
+
+@media (min-width: 1024px) {
+  #front-layout {
+    #navbar {
+      .q-toolbar {
+        .q-toolbar__title {
+          text-align: center;
+        }
+      }
+    }
+  }
+}

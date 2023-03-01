@@ -1,0 +1,92 @@
+// front
+@import 'front/HomeView.scss';
+@import 'front/LoginView.scss';
+@import 'front/AboutView.scss';
+@import 'front/AllProduct.scss';
+@import 'front/AllSeat.scss';
+@import 'front/OneProduct.scss';
+@import 'front/OneSeat.scss';
+@import 'front/ContactView.scss';
+
+// member
+@import 'member/HomeView.scss';
+@import 'member/MembersView.scss';
+@import 'member/CardProduct.scss';
+@import 'member/CardSeat.scss';
+@import 'member/OrdersView.scss';
+@import 'member/BookingsView.scss';
+
+// admin
+@import 'admin/HomeView.scss';
+@import 'admin/BookingsView.scss';
+@import 'admin/MembersView.scss';
+@import 'admin/OrdersView.scss';
+@import 'admin/ProductsView.scss';
+@import 'admin/SeatsView.scss';
+@import 'admin/StatisticsView.scss';
+
+// layout
+@import 'layouts/FrontLayout.scss';
+@import 'layouts/MemberLayout.scss';
+@import 'layouts/AdminLayout.scss';
+
+// components
+@import 'components/ProductCard.scss';
+
+@import 'animation.scss';
+
+
+// vue3-img-input
+@import "node_modules/vue3-img-input/src/styles/style.scss";
+$v-image-input-width: 200px !default;
+$v-image-input-height: 200px !default;
+
+// @import "vue-easy-pie-chart/dist/vue-easy-pie-chart.css";
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+
+.swal2-container {
+  z-index: 7000 !important;
+}
+
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+}
+
+@media (min-width: 576px) {
+  .container {
+    max-width: 540px;
+  }
+}
+@media (min-width: 768px) {
+  .container {
+    max-width: 720px;
+  }
+}
+@media (min-width: 992px) {
+  .container {
+    max-width: 960px;
+  }
+}
+@media (min-width: 1200px) {
+  .container {
+    max-width: 1140px;
+  }
+}
+
+
+
+
+

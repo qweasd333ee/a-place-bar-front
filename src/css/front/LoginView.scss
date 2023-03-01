@@ -1,0 +1,73 @@
+#login-view {
+  height: 100vh;
+  position: relative;
+  .bg-left {
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+    .q-img {
+      min-height: 100%;
+      width: 100%;
+    }
+  }
+  .q-card {
+    width: 80%;
+    height: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    border-radius: 10px;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    .tab {
+      height: 15%;
+      .q-tabs {
+        .q-tab__label {
+          font-size: 1.2rem;
+          padding: 10px 0;
+        }
+      }
+    }
+    .form {
+      height: 85%;
+      justify-content: center;
+      padding: 0 1rem;
+    }
+  }
+}
+
+@media (min-width: 576px) {
+  #login-view {
+    .q-card {
+      width: 70%;
+    }
+  }
+}
+
+@media (min-width: 768px) {
+  #login-view {
+    .q-card {
+      width: 60%;
+    }
+  }
+}
+
+@media (min-width: 992px) {
+  #login-view {
+    .q-card {
+      width: 50%;
+    }
+  }
+}
+
+@media (min-width: 1200px) {
+  #login-view {
+    .q-card {
+      width: 40%;
+    }
+  }
+}
