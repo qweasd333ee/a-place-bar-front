@@ -31,6 +31,9 @@
                     <q-btn color="red" icon="mdi-trash-can" @click="deleteUser(user._id)" />
                   </td>
                 </tr>
+                <tr v-if="users.length === 0">
+                  <td class="text-center text-h6" colspan="8">沒有會員</td>
+                </tr>
               </tbody>
             </q-markup-table>
           </div>

@@ -31,6 +31,9 @@
                     </div>
                   </td>
                 </tr>
+                <tr v-if="bookings.length === 0">
+                  <td class="text-center text-h6" colspan="7">沒有訂位</td>
+                </tr>
               </tbody>
             </q-markup-table>
           </div>

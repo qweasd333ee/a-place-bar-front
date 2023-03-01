@@ -27,6 +27,9 @@
                     </div>
                   </td>
                 </tr>
+                <tr v-if="orders.length === 0">
+                  <td class="text-center text-h6" colspan="8">沒有訂餐</td>
+                </tr>
               </tbody>
             </q-markup-table>
           </div>

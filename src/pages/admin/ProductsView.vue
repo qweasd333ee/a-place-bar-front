@@ -59,6 +59,9 @@
                     <q-btn color="warning" icon="edit" @click="openDialog(idx)" />
                   </td>
                 </tr>
+                <tr v-if="products.length === 0">
+                  <td class="text-center text-h6" colspan="6">沒有餐點</td>
+                </tr>
               </tbody>
             </q-markup-table>
           </div>

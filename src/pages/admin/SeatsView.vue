@@ -61,6 +61,9 @@
                     <q-btn color="warning" icon="edit" @click="openDialog(idx)" />
                   </td>
                 </tr>
+                <tr v-if="seats.length === 0">
+                  <td class="text-center text-h6" colspan="7">沒有座位</td>
+                </tr>
               </tbody>
             </q-markup-table>
           </div>

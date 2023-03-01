@@ -56,12 +56,12 @@
             </q-item-section>
             <q-item-section>回報管理</q-item-section>
           </q-item>
-          <q-item clickable v-ripple to="/admin/statistics">
+          <!-- <q-item clickable v-ripple to="/admin/statistics">
             <q-item-section avatar>
               <q-icon name="bar_chart" />
             </q-item-section>
             <q-item-section>營業統計</q-item-section>
-          </q-item>
+          </q-item> -->
         </q-list>
         <q-img class="absolute-top" src="https://cdn.quasar.dev/img/material.png" style="height: 150px">
           <div class="absolute-bottom bg-transparent text-center">
