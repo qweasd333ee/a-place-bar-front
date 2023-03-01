@@ -1,7 +1,7 @@
 <template>
   <q-page id="one-seat">
     <header id="header" v-if="$q.screen.gt.sm">
-      <div class="text-white text-center text-h3 background">線上訂位</div>
+      <div class="text-white text-center text-h3 background">餐點介紹</div>
     </header>
     <section id="section01">
       <div class="container">
@@ -11,11 +11,11 @@
               <q-card-section class="column text-center">
                 <h3 class="q-pb-xl">{{ seat.floor + ' ' + seat.name + ' ' + seat.category }}</h3>
                 <q-form class="justify-end" v-model="valid" @submit="submitCart">
-                  <q-input label="姓名" filled v-model="name" :rules="[rules.required]" />
-                  <q-input label="電話" filled v-model="phone" :rules="[rules.required]" />
-                  <q-input label="信箱" filled v-model="email" :rules="[rules.required, rules.email]" />
-                  <q-input label="座位數" filled v-model.number="seat.seatNumber" :rules="[rules.required, rules.number]" />
-                  <q-input label="訂位日期、時間" filled v-model="date" :rules="[rules.required]">
+                  <q-input label="姓名" filled v-model="name" :rules="rules.name" />
+                  <q-input label="電話" filled v-model="phone" :rules="rules.phone" />
+                  <q-input label="信箱" filled v-model="email" :rules="rules.email" />
+                  <q-input label="座位數" filled v-model.number="seat.seatNumber" :rules="rules.seatNumber" />
+                  <q-input label="訂位日期、時間" filled v-model="date" :rules="rules.date">
                     <template v-slot:prepend>
                       <q-icon name="event" class="cursor-pointer">
                         <q-popup-proxy
@@ -60,6 +60,8 @@
                   <q-btn :label="!seat.using ? '加入訂位' : '使用中'" type="submit" color="warning" :disabled="seat.using"/>
                 </q-form>
               </q-card-section>
+              <q-card-section class="col-12">
+              </q-card-section>
             </q-card>
           </div>
         </div>
@@ -100,15 +102,23 @@ const seat = reactive({
 })
 
 const rules = {
-  required (v) {
-    return !!v || '欄位必填'
-  },
-  number (v) {
-    return v > 0 || '人數錯誤'
-  },
-  email (v) {
-    return isEmail(v) || '信箱格式錯誤'
-  }
+  name: [
+    v => !!v || '欄位必填'
+  ],
+  phone: [
+    v => !!v || '欄位必填'
+  ],
+  email: [
+    v => !!v || '欄位必填',
+    v => isEmail(v) || '信箱格式錯誤'
+  ],
+  seatNumber: [
+    v => !!v || '欄位必填',
+    v => v > 0 || '人數錯誤'
+  ],
+  date: [
+    v => !!v || '欄位必填'
+  ]
 }
 
 const submitCart = () => {

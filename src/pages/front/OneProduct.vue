@@ -16,7 +16,7 @@
                 <h6 class="q-pb-xl text-h4">{{ product.description }}</h6>
                 <p class="q-pb-xl text-body1">${{ product.price }}</p>
                 <q-form class="justify-end" v-model="valid" @submit="submitCart">
-                  <q-input class="q-pb-xl" filled v-model.number="quantity" type="number" label="數量" :rules="[rules.required, rules.number]" />
+                  <q-input class="q-pb-xl" filled v-model.number="quantity" type="number" label="數量" :rules="rules.quantity" />
                   <q-btn label="加入購物車" type="submit" color="warning"/>
                 </q-form>
               </q-card-section>
@@ -46,12 +46,10 @@ const valid = ref(false)
 const quantity = ref(0)
 
 const rules = {
-  required (value) {
-    return !!value || '欄位必填'
-  },
-  number (value) {
-    return value > 0 || '數量錯誤'
-  }
+  quantity: [
+    v => !!v || '欄位必填',
+    v => v > 0 || '數量錯誤'
+  ]
 }
 
 const product = reactive({

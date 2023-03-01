@@ -39,13 +39,13 @@
               class="q-gutter-md"
             >
               <div class="q-mb-lg">
-                <q-input v-model="form.name" filled type="text" label="姓名" :rules="[rules.required]" />
+                <q-input v-model="form.name" filled type="text" label="姓名" :rules="rules.name" />
               </div>
               <div class="q-mb-lg">
-                <q-input v-model="form.email" filled type="text" label="信箱" :rules="[rules.required, rules.email]" />
+                <q-input v-model="form.email" filled type="text" label="信箱" :rules="rules.email" />
               </div>
               <div class="q-mb-lg">
-                <q-input v-model="form.description" filled rows="11" type="textarea" label="內容" :rules="[rules.required]" />
+                <q-input v-model="form.description" filled rows="11" type="textarea" label="內容" :rules="rules.description" />
               </div>
               <div>
                 <q-btn label="送出" type="submit" color="warning"/>
@@ -63,14 +63,20 @@ import { apiAuth } from 'src/boot/axios'
 import { reactive } from 'vue'
 import { isEmail } from 'validator'
 import Swal from 'sweetalert2'
+
 const rules = {
-  required (v) {
-    return !!v || '欄位必填'
-  },
-  email (v) {
-    return isEmail(v) || '信箱格式錯誤'
-  }
+  name: [
+    v => !!v || '欄位必填'
+  ],
+  email: [
+    v => !!v || '欄位必填',
+    v => isEmail(v) || '信箱格式錯誤'
+  ],
+  description: [
+    v => !!v || '欄位必填'
+  ]
 }
+
 const contacts = reactive([])
 const form = reactive({
   _id: '',

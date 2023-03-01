@@ -4,9 +4,9 @@
       <q-toolbar>
         <q-btn dense flat round icon="menu" @click="drawer = !drawer" />
         <q-toolbar-title>
-          <a href="/">
+          <router-link to="/">
             <img src="~/assets/LogoPic/logo6.png" />
-          </a>
+          </router-link>
         </q-toolbar-title>
       </q-toolbar>
     </q-header>
