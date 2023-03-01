@@ -60,7 +60,6 @@
 
 <script setup>
 import { reactive } from 'vue'
-import { isEmail } from 'validator'
 import { apiAuth } from 'src/boot/axios'
 import Swal from 'sweetalert2'
 
@@ -69,8 +68,7 @@ const rules = {
     v => !!v || '欄位必填'
   ],
   email: [
-    v => !!v || '欄位必填',
-    v => isEmail(v) || '信箱格式錯誤'
+    v => !!v || '欄位必填'
   ],
   description: [
     v => !!v || '欄位必填'

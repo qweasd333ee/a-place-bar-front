@@ -70,7 +70,6 @@
 
 <script setup>
 import { reactive, ref } from 'vue'
-import { isEmail } from 'validator'
 import { useRoute, useRouter } from 'vue-router'
 import { api } from 'src/boot/axios'
 import { Swal } from 'sweetalert2'
@@ -107,8 +106,7 @@ const rules = {
     v => !!v || '欄位必填'
   ],
   email: [
-    v => !!v || '欄位必填',
-    v => isEmail(v) || '信箱格式錯誤'
+    v => !!v || '欄位必填'
   ],
   seatNumber: [
     v => !!v || '欄位必填',
