@@ -7,8 +7,12 @@
       <div class="container">
         <div class="row justify-center">
           <div class="col-12 col-md-8 col-lg-6 text-center">
-            <div class="text-h4 q-mb-lg">聯絡資訊</div>
-            <p class="text-h6 q-mb-xl">如果您有任何意見或建議，歡迎您隨時與我們聯繫，我們會認真聆聽您的想法，為您提供更好的服務。謝謝您的支持，我們期待著您的光臨！</p>
+            <div data-aos="fade-up" data-aos-duration="1000">
+              <div class="text-h4 q-mb-lg">聯絡資訊</div>
+            </div>
+            <div data-aos="fade-up" data-aos-duration="1000">
+              <p class="text-h6 q-mb-xl">如果您有任何意見或建議，歡迎您隨時與我們聯繫，我們會認真聆聽您的想法，為您提供更好的服務。謝謝您的支持，我們期待著您的光臨！</p>
+            </div>
           </div>
         </div>
         <div class="row">

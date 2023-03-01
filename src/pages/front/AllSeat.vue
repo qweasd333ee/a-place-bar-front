@@ -5,6 +5,16 @@
     </header>
     <section id="section01">
       <div class="container">
+        <div class="row justify-center text-white">
+          <div class="col-12 col-md-8 col-lg-6 text-center">
+            <div data-aos="fade-up" data-aos-duration="1000">
+              <div class="q-mb-md text-h4">馬上訂位</div>
+            </div>
+            <div data-aos="fade-up" data-aos-duration="1000">
+              <p class="q-mb-xl text-h6">我們的酒吧提供線上訂位功能，讓您可以在網站或相關應用程式上輕鬆預訂您喜愛的座位。您只需選擇預定的日期、時間、人數和座位位置等相關資訊，填寫聯絡方式後即可完成預訂。我們的工作人員將為您保留預訂的座位，讓您在指定時間前來用餐或品嚐美食和飲品。線上訂位功能讓您避免在繁忙時段無法找到座位的困擾，更加輕鬆自在。</p>
+            </div>
+          </div>
+        </div>
         <div class="row">
           <q-markup-table class="col-12">
             <thead class="text-center">

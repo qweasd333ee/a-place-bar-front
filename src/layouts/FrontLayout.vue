@@ -11,8 +11,8 @@
             餐點介紹
           </q-btn>
         </div>
-        <q-toolbar-title class="col-md-2">
-          <router-link to="/">
+        <q-toolbar-title class="col-md-2" >
+          <router-link to="/" :class="{'display-block': isScrolled, 'display-none': !isScrolled }">
             <img src="~/assets/LogoPic/logo6.png" />
           </router-link>
         </q-toolbar-title>
@@ -77,6 +77,11 @@
           <q-item clickable v-ripple to="/seat" >
             <q-item-section>
               線上訂位
+            </q-item-section>
+          </q-item>
+          <q-item clickable v-ripple to="/contact" >
+            <q-item-section>
+              聯絡我們
             </q-item-section>
           </q-item>
         </q-list>

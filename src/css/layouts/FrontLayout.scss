@@ -28,6 +28,7 @@
       .q-toolbar__title {
         text-align: left;
       }
+      
     }
   }
   .q-page-container {
@@ -83,6 +84,12 @@
   .q-btn {
     color: white;
   }
+}
+.display-none {
+  display: none;
+}
+.display-block {
+  display: block;
 }
 
 @media (min-width: 1024px) {

@@ -20,6 +20,12 @@
     >
       <q-scroll-area class="fit">
         <q-list padding style="height: calc(100% - 150px); margin-top: 150px;">
+          <q-item clickable v-ripple to="/admin/members">
+            <q-item-section avatar>
+              <q-icon name="account_circle" />
+            </q-item-section>
+            <q-item-section>會員管理</q-item-section>
+          </q-item>
           <q-item clickable v-ripple to="/admin/products">
             <q-item-section avatar>
               <q-icon name="restaurant" />
@@ -43,12 +49,6 @@
               <q-icon name="airline_seat_recline_extra" />
             </q-item-section>
             <q-item-section>訂位管理</q-item-section>
-          </q-item>
-          <q-item clickable v-ripple to="/admin/members">
-            <q-item-section avatar>
-              <q-icon name="account_circle" />
-            </q-item-section>
-            <q-item-section>會員管理</q-item-section>
           </q-item>
           <q-item clickable v-ripple to="/admin/contacts">
             <q-item-section avatar>

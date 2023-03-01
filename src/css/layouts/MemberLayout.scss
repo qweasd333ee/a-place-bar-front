@@ -10,6 +10,9 @@
     top: 2px;
     right: 10px;
   }
+  .q-item.q-router-link--active {
+    color: var(--q-warning);
+  }
   .q-drawer {
     border-right: 1px solid #f4ebe4;
     .q-drawer__content {

@@ -6,9 +6,13 @@
     <section id="section01">
       <div class="container">
         <div class="row justify-center text-white">
-          <div class="col-12 col-md-8 col-lg-6 text-center">
-            <div class="q-mb-md text-h4">餐點分類</div>
-            <p class="q-mb-xl text-h6">我們的酒吧提供炸物和各式調酒，包括shot、茶酒、特調、奶酒、無酒精等，供您根據自己的口味和需求進行選擇。無論您喜歡清淡的口感還是濃烈的味道，我們都有合適的飲品供您品嚐。期待您的光臨，一同享受美食和美酒！</p>
+          <div class="col-10 col-md-8 col-lg-6 text-center">
+            <div data-aos="fade-up" data-aos-duration="1000">
+              <div class="q-mb-md text-h4">餐點分類</div>
+            </div>
+            <div data-aos="fade-up" data-aos-duration="1000">
+              <p class="q-mb-xl text-h6">我們的酒吧提供炸物和各式調酒，包括shot、茶酒、特調、奶酒、無酒精等，供您根據自己的口味和需求進行選擇。無論您喜歡清淡的口感還是濃烈的味道，我們都有合適的飲品供您品嚐。期待您的光臨，一同享受美食和美酒！</p>
+            </div>
           </div>
         </div>
         <div class="row">
