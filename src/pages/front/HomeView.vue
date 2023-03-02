@@ -59,7 +59,11 @@
     </section>
     <section id="section03" class="row">
       <div class="col-12 col-sm-5">
-        <q-img class="cover" src="~/assets/CarouselPic/pic10.jpeg" />
+        <q-parallax :height="600">
+          <template v-slot:media>
+            <img src="~/assets/CarouselPic/pic23.jpeg" />
+          </template>
+        </q-parallax>
       </div>
       <div class="col-12 col-sm-7">
         <q-card square flat class="column flex-center">
@@ -116,7 +120,11 @@
         </q-card>
       </div>
       <div class="col-12 col-sm-5 pic">
-        <q-img class="cover" src="~/assets/BartendingPic/酒13.jpeg" />
+        <q-parallax :height="600">
+          <template v-slot:media>
+            <img src="~/assets/BartendingPic/酒13.jpeg" />
+          </template>
+        </q-parallax>
       </div>
     </section>
     <section id="section05">
